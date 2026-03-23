@@ -120,3 +120,4 @@ C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/rom_driver
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/rom_headers/rom_driverlib_fr253x_fr263x.h:
 
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/rom_map_driverlib.h:
+

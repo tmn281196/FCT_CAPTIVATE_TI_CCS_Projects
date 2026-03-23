@@ -1,10 +1,10 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Fri Mar 13 10:02:19 2026
+>> Linked Mon Mar 23 08:55:26 2026
 
 OUTPUT FILE NAME:   <8TX4RX_R.out>
-ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 0000d92a
+ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 0000d922
 
 
 MEMORY CONFIGURATION
@@ -16,7 +16,7 @@ MEMORY CONFIGURATION
   PERIPHERALS_16BIT     00000100   00000100  00000000  00000100  RWIX
   INFOA                 00001800   00000200  00000000  00000200  RWIX
   RAM                   00002000   00001000  00000594  00000a6c  RWIX
-  FRAM                  0000c400   00003b80  00001620  00002560  RWIX
+  FRAM                  0000c400   00003b80  00001618  00002568  RWIX
   JTAGSIGNATURE         0000ff80   00000004  00000004  00000000  RWIX  ffff 
   BSLSIGNATURE          0000ff84   00000004  00000004  00000000  RWIX  ffff 
   INT00                 0000ff88   00000002  00000000  00000002  RWIX
@@ -137,98 +137,98 @@ section   page    origin      length       input sections
 .TI.persistent 
 *          0    0000c400    00000000     UNINITIALIZED
 
-.cinit     0    0000c400    0000015a     
-                  0000c400    00000148     (.cinit..data.load) [load image, compression = lzss]
-                  0000c548    00000006     (__TI_handler_table)
-                  0000c54e    00000004     (.cinit..bss.load) [load image, compression = zero_init]
-                  0000c552    00000008     (__TI_cinit_table)
+.cinit     0    0000c400    00000152     
+                  0000c400    00000140     (.cinit..data.load) [load image, compression = lzss]
+                  0000c540    00000006     (__TI_handler_table)
+                  0000c546    00000004     (.cinit..bss.load) [load image, compression = zero_init]
+                  0000c54a    00000008     (__TI_cinit_table)
 
-.pinit     0    0000c55a    00000000     UNINITIALIZED
+.pinit     0    0000c552    00000000     UNINITIALIZED
 
-.binit     0    0000c55a    00000000     
+.binit     0    0000c552    00000000     
 
 .init_array 
-*          0    0000c55a    00000000     UNINITIALIZED
+*          0    0000c552    00000000     UNINITIALIZED
 
 .mspabi.exidx 
-*          0    0000c55a    00000000     UNINITIALIZED
+*          0    0000c552    00000000     UNINITIALIZED
 
 .mspabi.extab 
-*          0    0000c55a    00000000     UNINITIALIZED
+*          0    0000c552    00000000     UNINITIALIZED
 
-.const     0    0000c55a    00000032     
-                  0000c55a    0000001e     mymodule.obj (.const:.string)
-                  0000c578    00000014     mymodule.obj (.const:UARTPort)
+.const     0    0000c552    00000032     
+                  0000c552    0000001e     mymodule.obj (.const:.string)
+                  0000c570    00000014     mymodule.obj (.const:UARTPort)
 
-.text      0    0000c58c    00001494     
-                  0000c58c    000001c8     captivate_fr2633_family.lib : CAPT_Calibration.o (.text:CAPT_calibrateGain)
-                  0000c754    0000019c                                 : CAPT_Calibration.o (.text:CAPT_calibrateOffset)
-                  0000c8f0    00000164                                 : CAPT_Touch.o (.text:CAPT_updateSensor)
-                  0000ca54    00000142     mymodule.obj (.text:prepare_tx_for_button)
-                  0000cb96    000000c4     driverlib_fr2633_family.lib : cs.o (.text:CS_initFLL)
-                  0000cc5a    000000b6     UART.obj (.text:UART_ISR)
-                  0000cd10    000000b4     driverlib_fr2633_family.lib : cs.o (.text:CS_initClockSignal)
-                  0000cdc4    000000a8     CAPT_BSP.obj (.text:BSP_configureMCU)
-                  0000ce6c    0000007a     main.obj (.text:main)
-                  0000cee6    00000070     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_testForRecalibration)
-                  0000cf56    0000006e     rts430x_sc_sd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
-                  0000cfc4    0000006a     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_initSensor)
-                  0000d02e    0000006a                                 : CAPT_Touch.o (.text:CAPT_processSensor)
-                  0000d098    00000062     UART.obj (.text:UART_openPort)
-                  0000d0fa    0000005e     mymodule.obj (.text:transmit_pending_data)
-                  0000d158    00000058     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_processFSMCycle)
-                  0000d1b0    00000058     CAPT_Manager.obj (.text:CAPT_updateUI)
-                  0000d208    00000056     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_updateSensorNoise)
-                  0000d25e    00000054     mymodule.obj (.text:process_rx)
-                  0000d2b2    00000052     rts430x_sc_sd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
-                  0000d304    00000052     mymodule.obj (.text:parse_command)
-                  0000d356    0000004e     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_preProcessSlider)
-                  0000d3a4    00000048                                 : CAPT_Touch.o (.text:CAPT_flagAllElementsForReseed)
-                  0000d3ec    00000048                                 : CAPT_Touch.o (.text:CAPT_loadCycle)
-                  0000d434    00000044     mymodule.obj (.text:recalib_handling)
-                  0000d478    00000042     UART.obj (.text:UART_transmitBuffer)
-                  0000d4ba    00000040     CAPT_ISR.obj (.text:CAPT_ISR)
-                  0000d4fa    00000040     CAPT_Manager.obj (.text:CAPT_initUI)
-                  0000d53a    00000040     mymodule.obj (.text:disable_handling)
-                  0000d57a    00000040     mymodule.obj (.text:enable_handling)
-                  0000d5ba    0000003e     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_unloadCycle)
-                  0000d5f8    0000003e     driverlib_fr2633_family.lib : cs.o (.text:CS_turnOnXT1LFWithTimeout)
-                  0000d636    0000003c     mymodule.obj (.text:unknown_handling)
-                  0000d672    0000003c     mymodule.obj (.text:verify_handling)
-                  0000d6ae    0000003a     CAPT_App.obj (.text:CAPT_appStart)
-                  0000d6e8    00000036     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_updateSensorTimeout)
-                  0000d71e    00000032     CAPT_App.obj (.text:CAPT_appSleep)
-                  0000d750    0000002e     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_startConversionAndWaitUntilDone)
-                  0000d77e    0000002c     mymodule.obj (.text:calculate_crc16)
-                  0000d7aa    0000002a     CAPT_App.obj (.text:CAPT_appHandler)
-                  0000d7d4    00000028     mymodule.obj (.text:process_command)
-                  0000d7fc    00000026     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_blockOnFlag)
-                  0000d822    00000024     CAPT_Manager.obj (.text:CAPT_getGlobalUIProximityStatus)
-                  0000d846    00000024     mymodule.obj (.text:uart_read)
-                  0000d86a    00000022     captivate_fr2633_family.lib : CAPT_Calibration.o (.text:CAPT_calibrateSensor)
-                  0000d88c    00000020     CAPT_Manager.obj (.text:CAPT_calibrateUI)
-                  0000d8ac    00000020     captivate_fr2633_family.lib : CAPT_HAL.o (.text:CAPT_init)
-                  0000d8cc    00000020                                 : CAPT_Touch.o (.text:CAPT_testForMaxCountRecalibration)
-                  0000d8ec    00000020     mymodule.obj (.text:uart_rx_callback)
-                  0000d90c    0000001e     driverlib_fr2633_family.lib : cs.o (.text:CS_clearAllOscFlagsWithTimeout)
-                  0000d92a    0000001c     rts430x_sc_sd_eabi.lib : boot.c.obj (.text:_c_int00_noargs)
-                  0000d946    00000018     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_testForNegativeTouchRecalibration)
-                  0000d95e    00000018     rts430x_sc_sd_eabi.lib : strcmp.c.obj (.text:strcmp)
-                  0000d976    00000016     driverlib_fr2633_family.lib : framctl.o (.text:FRAMCtl_configureWaitStateControl)
-                  0000d98c    00000014     rts430x_sc_sd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
-                  0000d9a0    00000014                            : mult16_f5hw.asm.obj (.text)
-                  0000d9b4    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
-                  0000d9c6    00000012                            : memcpy.c.obj (.text:memcpy)
-                  0000d9d8    0000000a     driverlib_fr2633_family.lib : cs.o (.text:CS_setExternalClockSource)
-                  0000d9e2    0000000a     CAPT_BSP.obj (.text:_system_pre_init)
-                  0000d9ec    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
-                  0000d9f4    00000008     mymodule.obj (.text:btn00_callback)
-                  0000d9fc    00000008     mymodule.obj (.text:btn01_callback)
-                  0000da04    00000008     mymodule.obj (.text:btn02_callback)
-                  0000da0c    00000006     captivate_fr2633_family.lib : CAPT_HAL.o (.text:CAPT_clearIFG)
-                  0000da12    00000006                                 : CAPT_HAL.o (.text:CAPT_getInterruptVector)
-                  0000da18    00000006     rts430x_sc_sd_eabi.lib : exit.c.obj (.text:abort)
-                  0000da1e    00000002                            : startup.c.obj (.text:_system_post_cinit)
+.text      0    0000c584    00001494     
+                  0000c584    000001c8     captivate_fr2633_family.lib : CAPT_Calibration.o (.text:CAPT_calibrateGain)
+                  0000c74c    0000019c                                 : CAPT_Calibration.o (.text:CAPT_calibrateOffset)
+                  0000c8e8    00000164                                 : CAPT_Touch.o (.text:CAPT_updateSensor)
+                  0000ca4c    00000142     mymodule.obj (.text:prepare_tx_for_button)
+                  0000cb8e    000000c4     driverlib_fr2633_family.lib : cs.o (.text:CS_initFLL)
+                  0000cc52    000000b6     UART.obj (.text:UART_ISR)
+                  0000cd08    000000b4     driverlib_fr2633_family.lib : cs.o (.text:CS_initClockSignal)
+                  0000cdbc    000000a8     CAPT_BSP.obj (.text:BSP_configureMCU)
+                  0000ce64    0000007a     main.obj (.text:main)
+                  0000cede    00000070     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_testForRecalibration)
+                  0000cf4e    0000006e     rts430x_sc_sd_eabi.lib : copy_decompress_lzss.c.obj (.text:decompress:lzss:__TI_decompress_lzss)
+                  0000cfbc    0000006a     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_initSensor)
+                  0000d026    0000006a                                 : CAPT_Touch.o (.text:CAPT_processSensor)
+                  0000d090    00000062     UART.obj (.text:UART_openPort)
+                  0000d0f2    0000005e     mymodule.obj (.text:transmit_pending_data)
+                  0000d150    00000058     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_processFSMCycle)
+                  0000d1a8    00000058     CAPT_Manager.obj (.text:CAPT_updateUI)
+                  0000d200    00000056     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_updateSensorNoise)
+                  0000d256    00000054     mymodule.obj (.text:process_rx)
+                  0000d2aa    00000052     rts430x_sc_sd_eabi.lib : autoinit.c.obj (.text:__TI_auto_init_nobinit_nopinit_hold_wdt:__TI_auto_init_nobinit_nopinit_hold_wdt)
+                  0000d2fc    00000052     mymodule.obj (.text:parse_command)
+                  0000d34e    0000004e     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_preProcessSlider)
+                  0000d39c    00000048                                 : CAPT_Touch.o (.text:CAPT_flagAllElementsForReseed)
+                  0000d3e4    00000048                                 : CAPT_Touch.o (.text:CAPT_loadCycle)
+                  0000d42c    00000044     mymodule.obj (.text:recalib_handling)
+                  0000d470    00000042     UART.obj (.text:UART_transmitBuffer)
+                  0000d4b2    00000040     CAPT_ISR.obj (.text:CAPT_ISR)
+                  0000d4f2    00000040     CAPT_Manager.obj (.text:CAPT_initUI)
+                  0000d532    00000040     mymodule.obj (.text:disable_handling)
+                  0000d572    00000040     mymodule.obj (.text:enable_handling)
+                  0000d5b2    0000003e     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_unloadCycle)
+                  0000d5f0    0000003e     driverlib_fr2633_family.lib : cs.o (.text:CS_turnOnXT1LFWithTimeout)
+                  0000d62e    0000003c     mymodule.obj (.text:unknown_handling)
+                  0000d66a    0000003c     mymodule.obj (.text:verify_handling)
+                  0000d6a6    0000003a     CAPT_App.obj (.text:CAPT_appStart)
+                  0000d6e0    00000036     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_updateSensorTimeout)
+                  0000d716    00000032     CAPT_App.obj (.text:CAPT_appSleep)
+                  0000d748    0000002e     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_startConversionAndWaitUntilDone)
+                  0000d776    0000002c     mymodule.obj (.text:calculate_crc16)
+                  0000d7a2    0000002a     CAPT_App.obj (.text:CAPT_appHandler)
+                  0000d7cc    00000028     mymodule.obj (.text:process_command)
+                  0000d7f4    00000026     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_blockOnFlag)
+                  0000d81a    00000024     CAPT_Manager.obj (.text:CAPT_getGlobalUIProximityStatus)
+                  0000d83e    00000024     mymodule.obj (.text:uart_read)
+                  0000d862    00000022     captivate_fr2633_family.lib : CAPT_Calibration.o (.text:CAPT_calibrateSensor)
+                  0000d884    00000020     CAPT_Manager.obj (.text:CAPT_calibrateUI)
+                  0000d8a4    00000020     captivate_fr2633_family.lib : CAPT_HAL.o (.text:CAPT_init)
+                  0000d8c4    00000020                                 : CAPT_Touch.o (.text:CAPT_testForMaxCountRecalibration)
+                  0000d8e4    00000020     mymodule.obj (.text:uart_rx_callback)
+                  0000d904    0000001e     driverlib_fr2633_family.lib : cs.o (.text:CS_clearAllOscFlagsWithTimeout)
+                  0000d922    0000001c     rts430x_sc_sd_eabi.lib : boot.c.obj (.text:_c_int00_noargs)
+                  0000d93e    00000018     captivate_fr2633_family.lib : CAPT_Touch.o (.text:CAPT_testForNegativeTouchRecalibration)
+                  0000d956    00000018     rts430x_sc_sd_eabi.lib : strcmp.c.obj (.text:strcmp)
+                  0000d96e    00000016     driverlib_fr2633_family.lib : framctl.o (.text:FRAMCtl_configureWaitStateControl)
+                  0000d984    00000014     rts430x_sc_sd_eabi.lib : copy_zero_init.c.obj (.text:decompress:ZI:__TI_zero_init_nomemset:__TI_zero_init_nomemset)
+                  0000d998    00000014                            : mult16_f5hw.asm.obj (.text)
+                  0000d9ac    00000012                            : copy_decompress_none.c.obj (.text:decompress:none:__TI_decompress_none)
+                  0000d9be    00000012                            : memcpy.c.obj (.text:memcpy)
+                  0000d9d0    0000000a     driverlib_fr2633_family.lib : cs.o (.text:CS_setExternalClockSource)
+                  0000d9da    0000000a     CAPT_BSP.obj (.text:_system_pre_init)
+                  0000d9e4    00000008     rts430x_sc_sd_eabi.lib : isr_trap.asm.obj (.text:_isr:__TI_ISR_TRAP)
+                  0000d9ec    00000008     mymodule.obj (.text:btn00_callback)
+                  0000d9f4    00000008     mymodule.obj (.text:btn01_callback)
+                  0000d9fc    00000008     mymodule.obj (.text:btn02_callback)
+                  0000da04    00000006     captivate_fr2633_family.lib : CAPT_HAL.o (.text:CAPT_clearIFG)
+                  0000da0a    00000006                                 : CAPT_HAL.o (.text:CAPT_getInterruptVector)
+                  0000da10    00000006     rts430x_sc_sd_eabi.lib : exit.c.obj (.text:abort)
+                  0000da16    00000002                            : startup.c.obj (.text:_system_post_cinit)
 
 .bss       0    00002252    00000242     UNINITIALIZED
                   00002252    000000d2     mymodule.obj (.bss:tx_buf)
@@ -414,7 +414,7 @@ MODULE SUMMARY
     +--+----------------------------+------+---------+---------+
        Total:                       500    0         4      
                                                             
-    C:\ti\ccs2040\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
+    C:\ti\ccs2041\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
        copy_decompress_lzss.c.obj   110    0         0      
        autoinit.c.obj               82     0         0      
        boot.c.obj                   28     2         0      
@@ -447,21 +447,21 @@ MODULE SUMMARY
        Total:                       336    36        0      
                                                             
        Stack:                       0      0         256    
-       Linker Generated:            0      346       0      
+       Linker Generated:            0      338       0      
     +--+----------------------------+------+---------+---------+
-       Grand Total:                 5268   436       1427   
+       Grand Total:                 5268   428       1427   
 
 
 LINKER GENERATED COPY TABLES
 
-__TI_cinit_table @ 0000c552 records: 2, size/record: 4, table size: 8
-	.data: load addr=0000c400, load size=00000148 bytes, run addr=00002000, run size=00000252 bytes, compression=lzss
-	.bss: load addr=0000c54e, load size=00000004 bytes, run addr=00002252, run size=00000242 bytes, compression=zero_init
+__TI_cinit_table @ 0000c54a records: 2, size/record: 4, table size: 8
+	.data: load addr=0000c400, load size=00000140 bytes, run addr=00002000, run size=00000252 bytes, compression=lzss
+	.bss: load addr=0000c546, load size=00000004 bytes, run addr=00002252, run size=00000242 bytes, compression=zero_init
 
 
 LINKER GENERATED HANDLER TABLE
 
-__TI_handler_table @ 0000c548 records: 3, size/record: 2, table size: 6
+__TI_handler_table @ 0000c540 records: 3, size/record: 2, table size: 6
 	index: 0, handler: __TI_zero_init
 	index: 1, handler: __TI_decompress_lzss
 	index: 2, handler: __TI_decompress_none
@@ -549,7 +549,7 @@ address   name
 00000672  BAKMEM9                                
 00000673  BAKMEM9_H                              
 00000672  BAKMEM9_L                              
-0000cdc4  BSP_configureMCU                       
+0000cdbc  BSP_configureMCU                       
 00002000  BTN01                                  
 00002200  BTN01_C00                              
 00002204  BTN01_C00_Elements                     
@@ -620,7 +620,7 @@ address   name
 00002486  BTN03_E00_RawCnts                      
 00002466  BTN03_E00_Tuning                       
 00002426  BTN03_Params                           
-0000da18  C$$EXIT                                
+0000da10  C$$EXIT                                
 00000b20  CAPIE                                  
 00000b21  CAPIE_H                                
 00000b20  CAPIE_L                                
@@ -630,35 +630,35 @@ address   name
 00000b24  CAPIV                                  
 00000b25  CAPIV_H                                
 00000b24  CAPIV_L                                
-0000d4ba  CAPT_ISR                               
-0000d7aa  CAPT_appHandler                        
-0000d71e  CAPT_appSleep                          
-0000d6ae  CAPT_appStart                          
-0000d7fc  CAPT_blockOnFlag                       
-0000c58c  CAPT_calibrateGain                     
-0000c754  CAPT_calibrateOffset                   
-0000d86a  CAPT_calibrateSensor                   
-0000d88c  CAPT_calibrateUI                       
-0000da0c  CAPT_clearIFG                          
-0000d3a4  CAPT_flagAllElementsForReseed          
-0000d822  CAPT_getGlobalUIProximityStatus        
-0000da12  CAPT_getInterruptVector                
-0000d8ac  CAPT_init                              
-0000cfc4  CAPT_initSensor                        
-0000d4fa  CAPT_initUI                            
-0000d3ec  CAPT_loadCycle                         
-0000d356  CAPT_preProcessSlider                  
-0000d158  CAPT_processFSMCycle                   
-0000d02e  CAPT_processSensor                     
-0000d750  CAPT_startConversionAndWaitUntilDone   
-0000d8cc  CAPT_testForMaxCountRecalibration      
-0000d946  CAPT_testForNegativeTouchRecalibration 
-0000cee6  CAPT_testForRecalibration              
-0000d5ba  CAPT_unloadCycle                       
-0000c8f0  CAPT_updateSensor                      
-0000d208  CAPT_updateSensorNoise                 
-0000d6e8  CAPT_updateSensorTimeout               
-0000d1b0  CAPT_updateUI                          
+0000d4b2  CAPT_ISR                               
+0000d7a2  CAPT_appHandler                        
+0000d716  CAPT_appSleep                          
+0000d6a6  CAPT_appStart                          
+0000d7f4  CAPT_blockOnFlag                       
+0000c584  CAPT_calibrateGain                     
+0000c74c  CAPT_calibrateOffset                   
+0000d862  CAPT_calibrateSensor                   
+0000d884  CAPT_calibrateUI                       
+0000da04  CAPT_clearIFG                          
+0000d39c  CAPT_flagAllElementsForReseed          
+0000d81a  CAPT_getGlobalUIProximityStatus        
+0000da0a  CAPT_getInterruptVector                
+0000d8a4  CAPT_init                              
+0000cfbc  CAPT_initSensor                        
+0000d4f2  CAPT_initUI                            
+0000d3e4  CAPT_loadCycle                         
+0000d34e  CAPT_preProcessSlider                  
+0000d150  CAPT_processFSMCycle                   
+0000d026  CAPT_processSensor                     
+0000d748  CAPT_startConversionAndWaitUntilDone   
+0000d8c4  CAPT_testForMaxCountRecalibration      
+0000d93e  CAPT_testForNegativeTouchRecalibration 
+0000cede  CAPT_testForRecalibration              
+0000d5b2  CAPT_unloadCycle                       
+0000c8e8  CAPT_updateSensor                      
+0000d200  CAPT_updateSensorNoise                 
+0000d6e0  CAPT_updateSensorTimeout               
+0000d1a8  CAPT_updateUI                          
 000001c0  CRCDI                                  
 000001c2  CRCDIRB                                
 000001c3  CRCDIRB_H                              
@@ -698,12 +698,12 @@ address   name
 00000190  CSCTL8                                 
 00000191  CSCTL8_H                               
 00000190  CSCTL8_L                               
-0000d90c  CS_clearAllOscFlagsWithTimeout         
-0000cd10  CS_initClockSignal                     
-0000cb96  CS_initFLL                             
-0000d9d8  CS_setExternalClockSource              
-0000d5f8  CS_turnOnXT1LFWithTimeout              
-0000d976  FRAMCtl_configureWaitStateControl      
+0000d904  CS_clearAllOscFlagsWithTimeout         
+0000cd08  CS_initClockSignal                     
+0000cb8e  CS_initFLL                             
+0000d9d0  CS_setExternalClockSource              
+0000d5f0  CS_turnOnXT1LFWithTimeout              
+0000d96e  FRAMCtl_configureWaitStateControl      
 000001a0  FRCTL0                                 
 000001a1  FRCTL0_H                               
 000001a0  FRCTL0_L                               
@@ -946,10 +946,10 @@ address   name
 00000460  TA3EX0                                 
 0000046e  TA3IV                                  
 00000450  TA3R                                   
-0000c578  UARTPort                               
-0000cc5a  UART_ISR                               
-0000d098  UART_openPort                          
-0000d478  UART_transmitBuffer                    
+0000c570  UARTPort                               
+0000cc52  UART_ISR                               
+0000d090  UART_openPort                          
+0000d470  UART_transmitBuffer                    
 00000510  UCA0ABCTL                              
 00000506  UCA0BRW                                
 00000507  UCA0BRW_H                              
@@ -1064,15 +1064,15 @@ address   name
 000001cc  WDTCTL_L                               
 00003000  __STACK_END                            
 00000100  __STACK_SIZE                           
-0000c552  __TI_CINIT_Base                        
-0000c55a  __TI_CINIT_Limit                       
-0000c55a  __TI_CINIT_Warm                        
-0000c548  __TI_Handler_Table_Base                
-0000c54e  __TI_Handler_Table_Limit               
-0000d9ec  __TI_ISR_TRAP                          
-0000d2b2  __TI_auto_init_nobinit_nopinit_hold_wdt
-0000cf56  __TI_decompress_lzss                   
-0000d9b4  __TI_decompress_none                   
+0000c54a  __TI_CINIT_Base                        
+0000c552  __TI_CINIT_Limit                       
+0000c552  __TI_CINIT_Warm                        
+0000c540  __TI_Handler_Table_Base                
+0000c546  __TI_Handler_Table_Limit               
+0000d9e4  __TI_ISR_TRAP                          
+0000d2aa  __TI_auto_init_nobinit_nopinit_hold_wdt
+0000cf4e  __TI_decompress_lzss                   
+0000d9ac  __TI_decompress_none                   
 0000ffd8  __TI_int40                             
 0000ffda  __TI_int41                             
 0000ffdc  __TI_int42                             
@@ -1095,20 +1095,20 @@ address   name
 ffffffff  __TI_pprof_out_hndl                    
 ffffffff  __TI_prof_data_size                    
 ffffffff  __TI_prof_data_start                   
-0000d98c  __TI_zero_init_nomemset                
+0000d984  __TI_zero_init_nomemset                
 ffffffff  __c_args__                             
-0000d9a0  __mspabi_mpyi_f5hw                     
-0000d92a  _c_int00_noargs                        
+0000d998  __mspabi_mpyi_f5hw                     
+0000d922  _c_int00_noargs                        
 0000fffe  _reset_vector                          
 00002f00  _stack                                 
-0000da1e  _system_post_cinit                     
-0000d9e2  _system_pre_init                       
-0000da18  abort                                  
-0000d9f4  btn00_callback                         
-0000d9fc  btn01_callback                         
-0000da04  btn02_callback                         
-0000d53a  disable_handling                       
-0000d57a  enable_handling                        
+0000da16  _system_post_cinit                     
+0000d9da  _system_pre_init                       
+0000da10  abort                                  
+0000d9ec  btn00_callback                         
+0000d9f4  btn01_callback                         
+0000d9fc  btn02_callback                         
+0000d532  disable_handling                       
+0000d572  enable_handling                        
 0000248e  g_UARTStatus                           
 0000248f  g_bConvCounterFlag                     
 00002490  g_bConvTimerFlag                       
@@ -1121,18 +1121,18 @@ ffffffff  __c_args__
 0000248c  g_ui16UARTTransmitBytesLeft            
 000021e0  g_uiApp                                
 00002247  isFrozen                               
-0000ce6c  main                                   
-0000d9c6  memcpy                                 
-0000d304  parse_command                          
-0000d7d4  process_command                        
-0000d25e  process_rx                             
-0000d434  recalib_handling                       
-0000d95e  strcmp                                 
-0000d0fa  transmit_pending_data                  
-0000d846  uart_read                              
-0000d8ec  uart_rx_callback                       
-0000d636  unknown_handling                       
-0000d672  verify_handling                        
+0000ce64  main                                   
+0000d9be  memcpy                                 
+0000d2fc  parse_command                          
+0000d7cc  process_command                        
+0000d256  process_rx                             
+0000d42c  recalib_handling                       
+0000d956  strcmp                                 
+0000d0f2  transmit_pending_data                  
+0000d83e  uart_read                              
+0000d8e4  uart_rx_callback                       
+0000d62e  unknown_handling                       
+0000d66a  verify_handling                        
 
 
 GLOBAL SYMBOLS: SORTED BY Symbol Address 
@@ -1704,79 +1704,79 @@ address   name
 00002493  g_bMaxCountErrorFlag                   
 00002f00  _stack                                 
 00003000  __STACK_END                            
-0000c548  __TI_Handler_Table_Base                
-0000c54e  __TI_Handler_Table_Limit               
-0000c552  __TI_CINIT_Base                        
-0000c55a  __TI_CINIT_Limit                       
-0000c55a  __TI_CINIT_Warm                        
-0000c578  UARTPort                               
-0000c58c  CAPT_calibrateGain                     
-0000c754  CAPT_calibrateOffset                   
-0000c8f0  CAPT_updateSensor                      
-0000cb96  CS_initFLL                             
-0000cc5a  UART_ISR                               
-0000cd10  CS_initClockSignal                     
-0000cdc4  BSP_configureMCU                       
-0000ce6c  main                                   
-0000cee6  CAPT_testForRecalibration              
-0000cf56  __TI_decompress_lzss                   
-0000cfc4  CAPT_initSensor                        
-0000d02e  CAPT_processSensor                     
-0000d098  UART_openPort                          
-0000d0fa  transmit_pending_data                  
-0000d158  CAPT_processFSMCycle                   
-0000d1b0  CAPT_updateUI                          
-0000d208  CAPT_updateSensorNoise                 
-0000d25e  process_rx                             
-0000d2b2  __TI_auto_init_nobinit_nopinit_hold_wdt
-0000d304  parse_command                          
-0000d356  CAPT_preProcessSlider                  
-0000d3a4  CAPT_flagAllElementsForReseed          
-0000d3ec  CAPT_loadCycle                         
-0000d434  recalib_handling                       
-0000d478  UART_transmitBuffer                    
-0000d4ba  CAPT_ISR                               
-0000d4fa  CAPT_initUI                            
-0000d53a  disable_handling                       
-0000d57a  enable_handling                        
-0000d5ba  CAPT_unloadCycle                       
-0000d5f8  CS_turnOnXT1LFWithTimeout              
-0000d636  unknown_handling                       
-0000d672  verify_handling                        
-0000d6ae  CAPT_appStart                          
-0000d6e8  CAPT_updateSensorTimeout               
-0000d71e  CAPT_appSleep                          
-0000d750  CAPT_startConversionAndWaitUntilDone   
-0000d7aa  CAPT_appHandler                        
-0000d7d4  process_command                        
-0000d7fc  CAPT_blockOnFlag                       
-0000d822  CAPT_getGlobalUIProximityStatus        
-0000d846  uart_read                              
-0000d86a  CAPT_calibrateSensor                   
-0000d88c  CAPT_calibrateUI                       
-0000d8ac  CAPT_init                              
-0000d8cc  CAPT_testForMaxCountRecalibration      
-0000d8ec  uart_rx_callback                       
-0000d90c  CS_clearAllOscFlagsWithTimeout         
-0000d92a  _c_int00_noargs                        
-0000d946  CAPT_testForNegativeTouchRecalibration 
-0000d95e  strcmp                                 
-0000d976  FRAMCtl_configureWaitStateControl      
-0000d98c  __TI_zero_init_nomemset                
-0000d9a0  __mspabi_mpyi_f5hw                     
-0000d9b4  __TI_decompress_none                   
-0000d9c6  memcpy                                 
-0000d9d8  CS_setExternalClockSource              
-0000d9e2  _system_pre_init                       
-0000d9ec  __TI_ISR_TRAP                          
-0000d9f4  btn00_callback                         
-0000d9fc  btn01_callback                         
-0000da04  btn02_callback                         
-0000da0c  CAPT_clearIFG                          
-0000da12  CAPT_getInterruptVector                
-0000da18  C$$EXIT                                
-0000da18  abort                                  
-0000da1e  _system_post_cinit                     
+0000c540  __TI_Handler_Table_Base                
+0000c546  __TI_Handler_Table_Limit               
+0000c54a  __TI_CINIT_Base                        
+0000c552  __TI_CINIT_Limit                       
+0000c552  __TI_CINIT_Warm                        
+0000c570  UARTPort                               
+0000c584  CAPT_calibrateGain                     
+0000c74c  CAPT_calibrateOffset                   
+0000c8e8  CAPT_updateSensor                      
+0000cb8e  CS_initFLL                             
+0000cc52  UART_ISR                               
+0000cd08  CS_initClockSignal                     
+0000cdbc  BSP_configureMCU                       
+0000ce64  main                                   
+0000cede  CAPT_testForRecalibration              
+0000cf4e  __TI_decompress_lzss                   
+0000cfbc  CAPT_initSensor                        
+0000d026  CAPT_processSensor                     
+0000d090  UART_openPort                          
+0000d0f2  transmit_pending_data                  
+0000d150  CAPT_processFSMCycle                   
+0000d1a8  CAPT_updateUI                          
+0000d200  CAPT_updateSensorNoise                 
+0000d256  process_rx                             
+0000d2aa  __TI_auto_init_nobinit_nopinit_hold_wdt
+0000d2fc  parse_command                          
+0000d34e  CAPT_preProcessSlider                  
+0000d39c  CAPT_flagAllElementsForReseed          
+0000d3e4  CAPT_loadCycle                         
+0000d42c  recalib_handling                       
+0000d470  UART_transmitBuffer                    
+0000d4b2  CAPT_ISR                               
+0000d4f2  CAPT_initUI                            
+0000d532  disable_handling                       
+0000d572  enable_handling                        
+0000d5b2  CAPT_unloadCycle                       
+0000d5f0  CS_turnOnXT1LFWithTimeout              
+0000d62e  unknown_handling                       
+0000d66a  verify_handling                        
+0000d6a6  CAPT_appStart                          
+0000d6e0  CAPT_updateSensorTimeout               
+0000d716  CAPT_appSleep                          
+0000d748  CAPT_startConversionAndWaitUntilDone   
+0000d7a2  CAPT_appHandler                        
+0000d7cc  process_command                        
+0000d7f4  CAPT_blockOnFlag                       
+0000d81a  CAPT_getGlobalUIProximityStatus        
+0000d83e  uart_read                              
+0000d862  CAPT_calibrateSensor                   
+0000d884  CAPT_calibrateUI                       
+0000d8a4  CAPT_init                              
+0000d8c4  CAPT_testForMaxCountRecalibration      
+0000d8e4  uart_rx_callback                       
+0000d904  CS_clearAllOscFlagsWithTimeout         
+0000d922  _c_int00_noargs                        
+0000d93e  CAPT_testForNegativeTouchRecalibration 
+0000d956  strcmp                                 
+0000d96e  FRAMCtl_configureWaitStateControl      
+0000d984  __TI_zero_init_nomemset                
+0000d998  __mspabi_mpyi_f5hw                     
+0000d9ac  __TI_decompress_none                   
+0000d9be  memcpy                                 
+0000d9d0  CS_setExternalClockSource              
+0000d9da  _system_pre_init                       
+0000d9e4  __TI_ISR_TRAP                          
+0000d9ec  btn00_callback                         
+0000d9f4  btn01_callback                         
+0000d9fc  btn02_callback                         
+0000da04  CAPT_clearIFG                          
+0000da0a  CAPT_getInterruptVector                
+0000da10  C$$EXIT                                
+0000da10  abort                                  
+0000da16  _system_post_cinit                     
 0000ffd8  __TI_int40                             
 0000ffda  __TI_int41                             
 0000ffdc  __TI_int42                             

@@ -141,3 +141,4 @@ C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/lcd_e.h:
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/icc.h:
 
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/crc.h:
+

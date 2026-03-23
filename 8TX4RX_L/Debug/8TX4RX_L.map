@@ -1,7 +1,7 @@
 ******************************************************************************
                   MSP430 Linker PC v21.6.1                     
 ******************************************************************************
->> Linked Fri Mar 13 10:01:23 2026
+>> Linked Mon Mar 23 08:55:32 2026
 
 OUTPUT FILE NAME:   <8TX4RX_L.out>
 ENTRY POINT SYMBOL: "_c_int00_noargs"  address: 0000d960
@@ -432,7 +432,7 @@ MODULE SUMMARY
     +--+----------------------------+------+---------+---------+
        Total:                       500    0         4      
                                                             
-    C:\ti\ccs2040\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
+    C:\ti\ccs2041\ccs\tools\compiler\ti-cgt-msp430_21.6.1.LTS\lib\rts430x_sc_sd_eabi.lib
        copy_decompress_lzss.c.obj   110    0         0      
        autoinit.c.obj               82     0         0      
        boot.c.obj                   28     2         0      

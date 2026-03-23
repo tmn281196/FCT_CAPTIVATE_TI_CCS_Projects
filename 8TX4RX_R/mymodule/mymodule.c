@@ -289,7 +289,7 @@ command_t parse_command(char *cmd) {
     return CMD_DISABLE;
   if (strcmp(cmd, "ENABLE") == 0)
     return CMD_ENABLE;
-  if (strcmp(cmd, "ID0000") == 0)
+  if (strcmp(cmd, "ID0001") == 0)
     return CMD_VERIFY;
   return CMD_UNKNOWN;
 }

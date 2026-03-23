@@ -207,3 +207,4 @@ C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/captivate/BASE/rom_captivate.h:
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/captivate/BASE/rom_headers/rom_captivate_msp430fr2633_family.h:
 
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/captivate/BASE/rom_map_captivate.h:
+

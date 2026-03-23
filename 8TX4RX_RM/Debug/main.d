@@ -207,3 +207,4 @@ C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/captivate_app/CAPT_App.h:
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/captivate_app/CAPT_BSP.h:
 
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/driverlib.h:
+

@@ -115,6 +115,33 @@
                     ]
                 }
             ]
+        },
+        {
+            "name": "8TX4RX_RM (1)",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "8TX4RX_RM",
+                "resourceId": "/8TX4RX_RM"
+            }
+        },
+        {
+            "name": "8TX4X_BTN0001",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "8TX4X_BTN0001",
+                "resourceId": "/8TX4X_BTN0001"
+            }
+        },
+        {
+            "name": "8TX4RX_BTN01",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "8TX4RX_BTN01",
+                "resourceId": "/8TX4RX_BTN01"
+            }
         }
     ]
 }

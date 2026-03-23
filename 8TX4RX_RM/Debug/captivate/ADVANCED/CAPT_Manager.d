@@ -123,3 +123,4 @@ C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/rom_header
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/driverlib/MSP430FR2xx_4xx/rom_map_driverlib.h:
 
 C:/Users/Com26/workspace_ccstheia/8TX4RX_RM/captivate_config/CAPT_UserConfig.h:
+
