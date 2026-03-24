@@ -86,15 +86,6 @@
             }
         },
         {
-            "name": "8RX_M",
-            "type": "ccs-debug",
-            "request": "launch",
-            "projectInfo": {
-                "name": "8RX_M",
-                "resourceId": "/8RX_M"
-            }
-        },
-        {
             "name": "8RX (1)",
             "type": "ccs-debug",
             "request": "launch",
@@ -135,12 +126,52 @@
             }
         },
         {
-            "name": "8TX4RX_BTN01",
+            "name": "ME_L",
             "type": "ccs-debug",
             "request": "launch",
             "projectInfo": {
-                "name": "8TX4RX_BTN01",
-                "resourceId": "/8TX4RX_BTN01"
+                "name": "ME_L",
+                "resourceId": "/ME_L"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "ME_LM",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ME_LM",
+                "resourceId": "/ME_LM"
+            }
+        },
+        {
+            "name": "ME_RM",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ME_RM",
+                "resourceId": "/ME_RM"
+            }
+        },
+        {
+            "name": "ME_R (1)",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "ME_R",
+                "resourceId": "/ME_R"
             }
         }
     ]
