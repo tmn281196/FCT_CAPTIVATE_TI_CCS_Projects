@@ -173,6 +173,15 @@
                 "name": "ME_R",
                 "resourceId": "/ME_R"
             }
+        },
+        {
+            "name": "DE_M",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "DE_M",
+                "resourceId": "/DE_M"
+            }
         }
     ]
 }
