@@ -539,7 +539,7 @@ tSensor BTN03 =
     .bPTSensorHalt = true,
     .bPTElementHalt = true,
     .ui8LTABeta = 7,
-    .bReCalibrateEnable = true,
+    .bReCalibrateEnable = false,
 };
 
 //Sensor: BTN04
@@ -587,7 +587,7 @@ tSensor BTN04 =
     .bPTSensorHalt = true,
     .bPTElementHalt = true,
     .ui8LTABeta = 7,
-    .bReCalibrateEnable = true,
+    .bReCalibrateEnable = false,
 };
 
 //Sensor: BTN05
@@ -638,7 +638,7 @@ tSensor BTN05 =
     .bPTSensorHalt = true,
     .bPTElementHalt = true,
     .ui8LTABeta = 7,
-    .bReCalibrateEnable = true,
+    .bReCalibrateEnable = false,
 };
 
 //Sensor: BTN06
@@ -687,7 +687,7 @@ tSensor BTN06 =
     .bPTSensorHalt = true,
     .bPTElementHalt = true,
     .ui8LTABeta = 7,
-    .bReCalibrateEnable = true,
+    .bReCalibrateEnable = false,
 };
 
 

@@ -313,7 +313,7 @@ tSensor BTN00 =
     .bPTSensorHalt = true,
     .bPTElementHalt = true,
     .ui8LTABeta = 7,
-    .bReCalibrateEnable = true,
+    .bReCalibrateEnable = false,
 };
 
 //Sensor: BTN01
@@ -364,7 +364,7 @@ tSensor BTN01 =
     .bPTSensorHalt = true,
     .bPTElementHalt = true,
     .ui8LTABeta = 7,
-    .bReCalibrateEnable = true,
+    .bReCalibrateEnable = false,
 };
 
 
