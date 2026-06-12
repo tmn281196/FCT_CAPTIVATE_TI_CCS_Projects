@@ -182,6 +182,37 @@
                 "name": "DE_M",
                 "resourceId": "/DE_M"
             }
+        },
+        {
+            "name": "DE (1)",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "DE",
+                "resourceId": "/DE"
+            }
+        },
+        {
+            "name": "MW",
+            "type": "ccs-debug",
+            "request": "launch",
+            "projectInfo": {
+                "name": "MW",
+                "resourceId": "/MW"
+            },
+            "connections": [
+                {
+                    "name": "TI MSP430 USB1",
+                    "cores": [
+                        {
+                            "name": "MSP430",
+                            "debuggerSettings": {
+                                "data": "<?xml version=\"1.0\" encoding=\"UTF-8\" standalone=\"no\" ?>\n<PropertyValues/>\n"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
     ]
 }

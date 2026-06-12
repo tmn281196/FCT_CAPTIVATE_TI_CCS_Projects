@@ -78,7 +78,7 @@
 // Compile-Time System Configuration Definitions
 //
 #define CAPT_SENSOR_COUNT                     (2)
-#define CAPT_INTERFACE  (__CAPT_UART_INTERFACE__)
+#define CAPT_INTERFACE  (__CAPT_NO_INTERFACE__)
 #define CAPT_WAKEONPROX_ENABLE  (false)
 #define CAPT_WAKEONPROX_SENSOR  (none)
 #define CAPT_TRACKPAD_ENABLE  (false)

@@ -1,0 +1,57 @@
+[
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED/CAPT_Manager.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE/CAPT_ISR.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM/CAPT_Interface.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM/FunctionTimer.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM/I2CSlave.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM/UART.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate_app/CAPT_App.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate_app/CAPT_BSP.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/captivate_config/CAPT_UserConfig.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/main.c"
+   },
+   {
+      "directory" : "C:/Users/Com26/workspace_ccstheia/MW/Debug",
+      "command"   : "clang++ -I\"C:/ti/ccs2041/ccs/ccs_base/msp430/include\" -I\"C:/Users/Com26/workspace_ccstheia/MW\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/driverlib/MSP430FR2xx_4xx\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mathlib\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/ADVANCED\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/BASE\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate/COMM\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_app\" -I\"C:/Users/Com26/workspace_ccstheia/MW/captivate_config\" -I\"C:/Users/Com26/workspace_ccstheia/MW/mymodule\" -I\"C:/ti/ccs2041/ccs/tools/compiler/ti-cgt-msp430_21.6.1.LTS/include\" -D__MSP430FR2633__ -DTARGET_IS_MSP430FR2XX_4XX -DUART__ENABLE=true -xc",
+      "file"      : "C:/Users/Com26/workspace_ccstheia/MW/mymodule/mymodule.c"
+   }
+]
