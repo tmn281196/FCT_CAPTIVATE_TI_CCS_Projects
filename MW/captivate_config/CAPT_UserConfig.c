@@ -442,7 +442,7 @@ tSensor BTN01 =
     .pCycle = BTN01_Cycles,
     .pSensorParams = (tGenericSensorParams*)&BTN01_Params,
     // Conversion Control Parameters
-    .ui16ConversionCount = 420,
+    .ui16ConversionCount = 300,
     .ui16ConversionGain = 100,
     .ui8FreqDiv = 2,
     .ui8ChargeLength = 0,
