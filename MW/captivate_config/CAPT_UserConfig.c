@@ -405,7 +405,7 @@ tSensor BTN00 =
     .bIdleState = true,
     // Tuning  Parameters
     .ui16ProxThreshold = 110,
-    .ui16NegativeTouchThreshold = 1033,
+    .ui16NegativeTouchThreshold = 2000,
     .ui16ErrorThreshold = 8191,
     .ui16TimeoutThreshold = 65535,
     .ProxDbThreshold.DbIn = 1,
